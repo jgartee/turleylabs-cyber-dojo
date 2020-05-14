@@ -3,7 +3,6 @@
       "Customer.java",
       "Movie.java",
       "Rental.java",
-      "VideoStoreTest.java",
       "cyber-dojo.sh"
     ],
 
@@ -14,7 +13,8 @@
     ],
  
    "hidden_filenames" : [
-        ".*.class"
+      "VideoStoreTest.java",
+      ".*[.]class"
     ],
   
     "filename_extension" : [".java"],

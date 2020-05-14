@@ -1,9 +1,28 @@
-rm -f *.class
-CLASSES=.:`ls /junit/*.jar | tr '\n' ':'`
-javac -Xlint:unchecked -Xlint:deprecation -cp $CLASSES  *.java
-if [ $? -eq 0 ]; then
-  # run test classes even if they are inner classes
-  # remove voluminous stack trace from output
-  java -cp $CLASSES org.junit.runner.JUnitCore `ls -1 *Test*.class | grep -v '\\$' | sed 's/\(.*\)\..*/\1/'` | grep -Ev 'org.junit.runner|org.junit.internal|sun.reflect|org.junit.Assert|java.lang.reflect|org.hamcrest'
-fi
+#! /bin/bash
+set -e
 
+cd ${CYBER_DOJO_SANDBOX}
+
+# Currently, using /approval in the classpath causes fatal errors such as
+# java.nio.file.AccessDeniedException: /approval/zipfstmp5701121991682355433.tmp
+# This is because /approval is read-only.
+# Working around this for now...
+cp -r /approval /tmp
+CLASSES=.:`ls /tmp/approval/*.jar | tr '\n' ':'`
+
+if javac --enable-preview \
+  --release 14 \
+  -Xlint:preview \
+  -Xlint:unchecked \
+  -Xlint:deprecation \
+  -cp $CLASSES \
+  *.java;
+then
+  java --enable-preview -jar /approval/junit-platform-console-standalone-1.6.2.jar \
+      --disable-banner \
+      --disable-ansi-colors \
+      --details=tree \
+      --details-theme=ascii \
+      --class-path .:$CLASSES \
+      --scan-class-path
+fi

@@ -1,0 +1,36 @@
+{
+    "visible_filenames": [
+      "Customer.java",
+      "Movie.java",
+      "Rental.java",
+      "VideoStoreTest.java",
+      "instructions",
+      "cyber-dojo.sh"
+    ],
+
+    "highlight_filenames": [ 
+        "Customer.java",
+        "Movie.java",
+        "Rental.java"
+    ],
+ 
+   "hidden_filenames" : [
+        ".*.class"
+    ],
+  
+    "filename_extension" : [".java"],
+  
+    "display_name": "Video Store Refactoring",
+  
+    "image_name": "cyberdojofoundation/java_junit",
+
+    "tab_size": 4,
+
+    "progress_regexs" : [
+        "Tests run\\: (\\d)+,(\\s)+Failures\\: (\\d)+",
+        "OK \\((\\d)+ test(s)?\\)"
+      ]
+  }
+
+
+  

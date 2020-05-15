@@ -1,5 +1,3 @@
-package videostore;
-
 import java.util.Vector;
 
 class Customer {

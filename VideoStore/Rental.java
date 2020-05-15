@@ -1,5 +1,3 @@
-package videostore;
-
 class Rental {
     private Movie movie;
     private int daysRented;

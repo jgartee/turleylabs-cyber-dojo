@@ -1,35 +1,17 @@
-{
-    "visible_filenames": [
+  {
+    "display_name": "Video Store Refactoring",
+    "image_name": "cyberdojofoundation/java_approval",
+    "visible_filenames":
+    [
       "Customer.java",
       "Movie.java",
       "Rental.java",
-      "cyber-dojo.sh"
-    ],
-
-    "highlight_filenames": [ 
-        "Customer.java",
-        "Movie.java",
-        "Rental.java"
-    ],
- 
-   "hidden_filenames" : [
       "VideoStoreTest.java",
-      ".*[.]class"
+      "cyber-dojo.sh",
+      "VideoStoreTest.approveCustomerStatement.approved.txt"
     ],
-  
-    "filename_extension" : [".java"],
-  
-    "display_name": "Video Store Refactoring",
-  
-    "image_name": "cyberdojofoundation/java_junit",
-
+    "filename_extension" : [ ".java", ".txt" ],
+    "max_seconds": 10,
     "tab_size": 4,
-
-    "progress_regexs" : [
-        "Tests run\\: (\\d)+,(\\s)+Failures\\: (\\d)+",
-        "OK \\((\\d)+ test(s)?\\)"
-      ]
+    "hidden_filenames": []
   }
-
-
-  

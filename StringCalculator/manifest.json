@@ -1,10 +1,10 @@
   {
-    "display_name": "TDD Fizz Buzz",
+    "display_name": "TDD String Calculator",
     "image_name": "cyberdojofoundation/java_junit",
     "visible_filenames":
     [
-      "FizzBuzz.java",
-      "FizzBuzzTest.java",
+      "StringCalculator.java",
+      "StringCalculatorTest.java",
       "cyber-dojo.sh",
       "readme.txt"
     ],

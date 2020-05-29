@@ -9,7 +9,7 @@
       "cyber-dojo.sh"
     ],
     "filename_extension" : [ ".java", ".txt" ],
-    "max_seconds": 30,
+    "max_seconds": 20,
     "tab_size": 4,
     "hidden_filenames": []
   }

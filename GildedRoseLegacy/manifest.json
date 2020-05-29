@@ -6,7 +6,7 @@
       "GildedRose.java",
       "Item.java",
       "GildedRoseTest.java",
-      "cyber-dojo.sh",
+      "cyber-dojo.sh"
     ],
     "filename_extension" : [ ".java", ".txt" ],
     "max_seconds": 10,

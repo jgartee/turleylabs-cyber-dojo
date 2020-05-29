@@ -7,7 +7,6 @@
       "Item.java",
       "GildedRoseTest.java",
       "cyber-dojo.sh",
-      "GildedRoseTest.approveGildedRose.approved.txt"
     ],
     "filename_extension" : [ ".java", ".txt" ],
     "max_seconds": 10,

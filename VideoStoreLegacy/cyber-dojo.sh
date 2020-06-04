@@ -18,11 +18,21 @@ if javac --enable-preview \
   -cp $CLASSES \
   *.java;
 then
-  java --enable-preview -jar /approval/junit-platform-console-standalone-1.6.2.jar \
+  java --enable-preview --enable-preview -javaagent:/approval/jacocoagent.jar \
+      -jar /approval/junit-platform-console-standalone-1.6.2.jar \
       --disable-banner \
       --disable-ansi-colors \
       --details=tree \
       --details-theme=ascii \
       --class-path .:$CLASSES \
       --scan-class-path
+
+  STATUS=$?
+
+  java -jar /approval/jacococli.jar report jacoco.exec --classfiles . --sourcefiles . --xml coverage.xml
+  echo ""
+  echo "* Code Coverage * "
+  ruby /approval/coverage_stats.rb coverage.xml
+  exit $STATUS
+
 fi

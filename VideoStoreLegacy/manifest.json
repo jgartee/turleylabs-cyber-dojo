@@ -8,7 +8,8 @@
       "Rental.java",
       "RentalService.java",
       "VideoStoreTest.java",
-      "cyber-dojo.sh"
+      "cyber-dojo.sh",
+      "readme.txt"
     ],
     "filename_extension" : [ ".java", ".txt" ],
     "max_seconds": 10,

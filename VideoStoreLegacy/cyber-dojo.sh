@@ -1,5 +1,5 @@
 #! /bin/bash
-set -e
+# set -e
 
 cd ${CYBER_DOJO_SANDBOX}
 

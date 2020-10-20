@@ -1,0 +1,19 @@
+  {
+    "display_name": "Functional Java - Streams",
+    "image_name": "cyberdojofoundation/java_junit",
+    "visible_filenames":
+    [
+      "Employee.java",
+      "Streams.java",
+      "StreamsTest.java",
+      "cyber-dojo.sh"
+    ],
+    "filename_extension" : [ ".java", ".txt" ],
+    "max_seconds": 10,
+    "tab_size": 4,
+    "hidden_filenames": [],
+    "progress_regexs": [
+      "Failures (\\d)\\:",
+      "^\\[\\s+(\\d+) tests successful\\s+\\]"
+    ]
+  }

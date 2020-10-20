@@ -1,0 +1,20 @@
+  {
+    "display_name": "Functional Java - Arithmetic",
+    "image_name": "cyberdojofoundation/java_junit",
+    "visible_filenames":
+    [
+      "Arithmetic.java",
+      "ArithmeticOperation.java",
+      "ArithmeticTest.java",
+      "Constant.java",
+      "cyber-dojo.sh"
+    ],
+    "filename_extension" : [ ".java", ".txt" ],
+    "max_seconds": 10,
+    "tab_size": 4,
+    "hidden_filenames": [],
+    "progress_regexs": [
+      "Failures (\\d)\\:",
+      "^\\[\\s+(\\d+) tests successful\\s+\\]"
+    ]
+  }

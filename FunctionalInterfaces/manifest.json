@@ -9,7 +9,7 @@
       "Department.java",
       "cyber-dojo.sh"
     ],
-    "highlight_filenames": [ "Functional.java" ],
+    "highlight_filenames": [ "Functional.java",  "FunctionalTest.java"],
     "filename_extension" : [ ".java", ".txt" ],
     "max_seconds": 10,
     "tab_size": 4,

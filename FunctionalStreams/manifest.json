@@ -9,6 +9,7 @@
       "Department.java",
       "cyber-dojo.sh"
     ],
+    "highlight_filenames": [ "Streams.java",  "StreamsTest.java"],
     "filename_extension" : [ ".java", ".txt" ],
     "max_seconds": 10,
     "tab_size": 4,

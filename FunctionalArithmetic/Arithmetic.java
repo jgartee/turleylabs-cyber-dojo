@@ -13,10 +13,10 @@ public class Arithmetic {
 
     public int calculateResult(int a, int b) {
         // TODO: pass a lambda as a parameter that returns the result the test needs
-        return internalCalculation(Constant.REPLACE_WITH_LAMBDA);
+        return internalCalculation(Constant.REPLACE_WITH_LAMBDA, a, b);
     }
 
-    private int internalCalculation(ArithmeticOperation operation) {
+    private int internalCalculation(ArithmeticOperation operation, int a, int b) {
         // TODO: call the operation
         return 0;
     }

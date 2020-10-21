@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.function.*;
 
 public class Functional {
     private ArrayList<String> names;
@@ -12,7 +13,7 @@ public class Functional {
         this.names = names;
     }
 
-    public void getNamesOfEmployeesMakingLessThan100k(List<Employee> employees, ArrayList<String> names) {
+    public void getNamesOfEmployeesMakingLessThan100k(List<Employee> employees) {
         for(Employee employee : employees) {
             if (makesLessThan100k.test(employee)) {
                 String name = employeeName.apply(employee);
@@ -21,3 +22,4 @@ public class Functional {
         }
     }
 }
+

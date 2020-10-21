@@ -1,9 +1,10 @@
 import org.junit.jupiter.api.*;
 import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
+
 
 import static org.junit.jupiter.api.Assertions.*;
-import static Employee.createEmployees;
 
 public class FunctionalTest {
 
@@ -36,7 +37,7 @@ public class FunctionalTest {
         assertNotNull(functional.makesLessThan100k);
         assertNotNull(functional.employeeName);
         assertNotNull(functional.addName);
-        List<Employee> employees = createEmployees();
+        List<Employee> employees = Employee.createEmployees();
         functional.getNamesOfEmployeesMakingLessThan100k(employees);
         assertEquals(expectedNames, names);
     }

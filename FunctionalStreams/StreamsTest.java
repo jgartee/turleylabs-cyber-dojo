@@ -5,9 +5,8 @@ import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static Employee.createEmployees;
 
-public class StreamTest {
+public class StreamsTest {
     @Test
     public void doubleTheEvenNumbersAndTotalThem() {
         List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
@@ -23,7 +22,7 @@ public class StreamTest {
     @Test
     public void getReverseSortedListOfNamesOfMarketingEmployeesMakingAtLeast100000() {
         List<String> names = Arrays.asList("Wendy", "Simon", "Richard", "Rebecca", "Nicola", "Matt", "Justin", "Julia", "Jan", "Gordon", "Diane", "David", "Carol", "Anthony");
-        List<Employee> employees = createEmployees();
+        List<Employee> employees = Employee.createEmployees();
         assertEquals(names, Streams.findMarketingNames(employees));
     }
 
@@ -34,13 +33,13 @@ public class StreamTest {
             put(100000, Arrays.asList("Abigail", "Gabrielle", "Kimberly", "Tracey", "Brandon", "Jacob", "Neil"));
             put(75000, Arrays.asList("Bernadette", "Irene", "Lisa", "Wanda", "Dan", "Joseph", "Peter"));
         }};
-        List<Employee> employees = createEmployees();
+        List<Employee> employees = Employee.createEmployees();
         assertEquals(namesBySalary, Streams.groupTechnologyEmployeeNamesBySalary(employees));
     }
 
     @Test
     public void getAverageSalariesByDepartment() {
-        List<Employee> employees = createEmployees();
+        List<Employee> employees = Employee.createEmployees();
         Map<Department, Double> averageSalariesByDepartment = Streams.getAverageSalariesByDepartment(employees);
         assertEquals(85000.00, averageSalariesByDepartment.get(Department.Accounting), 0.01);
         assertEquals(113333.33, averageSalariesByDepartment.get(Department.Marketing), 0.01);
@@ -50,13 +49,13 @@ public class StreamTest {
 
     @Test
     public void getTheHighestSalaryOfNamesStartingWithTheLetterK() {
-        List<Employee> employees = createEmployees();
+        List<Employee> employees = Employee.createEmployees();
         assertEquals(130000, Streams.getHighestSalaryOfKNames(employees));
     }
 
     @Test
     public void getUniqueSalariesSortedGreatestToLeast() {
-        List<Employee> employees = createEmployees();
+        List<Employee> employees = Employee.createEmployees();
         List<Integer> salaries = Arrays.asList(130000, 120000, 100000, 90000, 80000, 75000);
         assertIterableEquals(salaries, Streams.determineSortedUniqueSalaries(employees));
     }

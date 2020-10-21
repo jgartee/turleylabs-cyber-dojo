@@ -3,9 +3,10 @@
     "image_name": "cyberdojofoundation/java_junit",
     "visible_filenames":
     [
-      "Employee.java",
       "Functional.java",
       "FunctionalTest.java",
+      "Employee.java",
+      "Department.java",
       "cyber-dojo.sh"
     ],
     "filename_extension" : [ ".java", ".txt" ],

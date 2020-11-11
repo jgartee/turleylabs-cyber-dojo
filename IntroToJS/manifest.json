@@ -3,12 +3,12 @@
     "image_name": "steve/javascript-jest",
     "visible_filenames":
     [
-      "index.test.js",
-      "fizzbuzz.js",
+      "src/index.test.js",
+      "src/fizzbuzz.js",
       "cyber-dojo.sh",
       "package.json"
     ],
-    "highlight_filenames": [ "index.test.js" ],
+    "highlight_filenames": [ "src/index.test.js" ],
     "filename_extension" : [ ".js", ".txt" ],
     "max_seconds": 20,
     "tab_size": 4,

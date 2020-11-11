@@ -5,7 +5,8 @@
     [
       "index.test.js",
       "fizzbuzz.js",
-      "cyber-dojo.sh"
+      "cyber-dojo.sh",
+      "package.json"
     ],
     "highlight_filenames": [ "index.test.js" ],
     "filename_extension" : [ ".js", ".txt" ],

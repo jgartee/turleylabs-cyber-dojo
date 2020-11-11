@@ -1,14 +1,15 @@
   {
-    "display_name": "Functional Java - Arithmetic",
+    "display_name": "Intro to JavaScript",
     "image_name": "steve/javascript-jest",
     "visible_filenames":
     [
       "index.test.js",
       "fizzbuzz.js",
+      "cyber-dojo.sh"
     ],
-    "highlight_filenames": [ "index.test.js"],
+    "highlight_filenames": [ "index.test.js" ],
     "filename_extension" : [ ".js", ".txt" ],
     "max_seconds": 20,
     "tab_size": 4,
-    "hidden_filenames": [],
+    "hidden_filenames": []
   }
